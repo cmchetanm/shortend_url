@@ -1,24 +1,46 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of contents
 
-Things you may want to cover:
+* Dependencies
+* Set up
 
-* Ruby version
+## Dependencies
 
-* System dependencies
+* Ruby '3.0.0'
+* Rails '~>7.0.4.2'
+* SQL Database: Sqlite3
 
-* Configuration
+## Set up
 
-* Database creation
+* Install Sqlite3
 
-* Database initialization
+* Install dependencies
+```
+		cd link_shortener
+		bundle install
+```
 
-* How to run the test suite
+* Add database configuration and add your system user.
+```
+		database.yml
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+* Create database
+```
+		rails db:create
+```
 
-* Deployment instructions
+* Migrate database
+```
+		rails db:migrate
+```
 
-* ...
+* Start server
+```
+		rails s
+```
+* Here is Postman collection link
+```
+https://documenter.getpostman.com/view/27097629/2s93Y6seXt
+```
